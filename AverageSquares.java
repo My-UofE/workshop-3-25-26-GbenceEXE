@@ -13,10 +13,10 @@ public class AverageSquares {
         System.out.println("You entered: " + startNum + " and " + endNum);
         int i = startNum;
         int sum = 0;
-        while (i <= endNum){
+        do{
             sum += i*i;
             i++;
-        }
+        } while (i <= endNum);
         double average = (double)sum / (endNum - startNum + 1);
 
         System.out.println("Average of squares from " + startNum + " to " + endNum + ":");
